@@ -83,7 +83,7 @@ The physical node is designed for power-efficient, long-term deployment. Before 
 
 <!-- Enclosure Image: The printed tracker assembly -->
 <p align="center">
-  <img src="docs/tracker-enclosure.png" alt="Custom 3D enclosure details" width="700" />
+  <img src="docs/tracker_enclosure.png" alt="Custom 3D enclosure details" width="700" />
   <br>
   <em>Custom 3D-modeled casing designed for maximum durability and precise component fit.</em>
 </p>
