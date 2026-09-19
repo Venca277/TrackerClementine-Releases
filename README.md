@@ -138,7 +138,6 @@ service.OnMessageReceived += (topic, payload) =>
     });
 };
 ```
-*This showcases error-resilient parsing and UI thread dispatching—crucial for a fluid mobile experience.*
 
 ## Field Deployment
 
