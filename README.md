@@ -104,29 +104,29 @@ service.OnMessageReceived += (topic, payload) =>
             {
                 var root = doc.RootElement;
 
-                // 1. Temporal Validation: Discard stale or corrupted timestamps
+                //discard stale or corrupted timestamps
                 if (root.TryGetProperty("server_time", out var timeProp) &&
                     DateTime.TryParse(timeProp.GetString(), out DateTime parsedTime) && 
                     parsedTime > DateTime.Now.AddMinutes(-30))
                 {
                     _lastMessageTime = parsedTime;
                 }
-                else return; // Ignore invalid chronologies
+                else return; //ignore invalid chronologies
 
-                // 2. Visual Feedback: Trigger UI pulsing to confirm live connection
+                //trigger UI pulsing to confirm live connection
                 _watchdogTimer.Stop();
                 StartPulsing();
                 _watchdogTimer.Start();
 
-                // 3. GIS Translation & Animation
+                //position translation animation
                 if (root.TryGetProperty("lat", out var latProp) && root.TryGetProperty("lon", out var lonProp))
                 {
                     var sphericalPosition = SphericalMercator.FromLonLat(lonProp.GetDouble(), latProp.GetDouble());
                     MPoint pos = new MPoint(sphericalPosition.x, sphericalPosition.y);
 
-                    UpdateGatoLayer(pos); // Refresh custom Mapsui MemoryLayer
+                    UpdateGatoLayer(pos); //refresh custom mapsui layer
 
-                    // Fluidly animate the camera to the new coordinates
+                    //fluidly move the camera to the new coordinates
                     mapView.Map.Navigator?.CenterOn(pos, 600, Mapsui.Animations.Easing.CubicInOut);
                 }
             }
