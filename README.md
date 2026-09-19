@@ -141,7 +141,7 @@ service.OnMessageReceived += (topic, payload) =>
 
 ## Field Deployment
 
-A system like this proves its worth only in the real world. Below is Klementynka equipped with the tracker module during an active field test, demonstrating the physical form factor and real-world durability of the 3D-printed enclosure.
+A system like this proves its worth only in the real world. Below is Klementynka equipped with the tracker module during an active field test, demonstrating the physical form factor and real world durability of the 3D printed enclosure.
 
 <!-- Field Usage Image: Klementynka wearing the tracker -->
 <p align="center">
