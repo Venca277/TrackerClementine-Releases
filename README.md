@@ -25,11 +25,9 @@
   <img src="docs/clementine-hero.png" alt="Clementine application and tracker enclosure" width="820" />
 </p>
 
-## The Philosophy
+## About the project
 
-Clementine is not just a tracker; it's a cohesive product ecosystem encompassing custom hardware, embedded C firmware, secure IoT infrastructure, and a fluid cross-platform mobile client. 
-
-The goal was to transform raw, noisy telemetry (AT commands, GNSS fixes, cellular network switching) into a calm, unified, and understandable user experience. The system operates as a reliable black box: the tracker negotiates with the cellular network and satellites, dispatching payloads via MQTT, while the mobile client translates this data into a beautiful, interactive map and dashboard.
+Clementine combines custom hardware, embedded C firmware, and a cross-platform mobile app. The goal is to hide the underlying complexity of cellular tracking. While the hardware handles GNSS positioning, network registration, and MQTT communication in the background, the app translates this raw data into a clean, straightforward map interface.
 
 ## System Capabilities
 
