@@ -86,6 +86,30 @@ The physical node is designed for power-efficient, long-term deployment. Before 
   <em>Custom 3D-modeled casing designed for maximum durability and precise component fit.</em>
 </p>
 
+## Field Deployment
+
+A system like this proves its worth only in the real world. Below is Klementynka equipped with the tracker module during an active field test, demonstrating the physical form factor and real world durability of the 3D printed enclosure.
+
+<!-- Field Usage Image: Klementynka wearing the tracker -->
+<p align="center">
+  <img src="docs/klementynka-field.jpg" alt="Klementynka wearing the tracker in the field" width="700" />
+  <br>
+  <em>Active field deployment.</em>
+</p>
+
+## Downloads & Releases
+
+While the source code is kept private to protect the underlying infrastructure and embedded secrets, the mobile client is fully built and ready for use. 
+
+Compiled application packages (iterated across multiple versions) are available for free download. You can find the latest Android (APK) and Windows builds in the **[Releases](../../releases)** section of this repository.
+
+## Design & Engineering Principles
+
+- **Quiet Complexity:** The UI hides the complexity of AT commands and MQTT handshakes behind a clean, interactive map.
+- **Platform Agnosticism:** Careful XAML architecting ensures the application renders pixel-perfectly on both Android native handlers and the notoriously strict Windows WinUI3 XAML parser.
+- **Graceful Uncertainty:** The system never lies. If a signal is lost, the UI explicitly transitions from a green `LIVE` pulse to a gray `LAST KNOWN` state with an elapsed time counter.
+- **Hardware-Software Synergy:** The software themes and 3D enclosure variants are designed as a unified product family.
+
 ## A Glimpse of the Codebase
 
 While the core source remains private, the snippet below demonstrates the application's approach to robust telemetry parsing. Instead of directly binding raw data, the C# client safely unpackages the JSON payload, validates the `server_time` to prevent temporal anomalies, and smoothly interpolates the map marker's position using easing animations.
@@ -136,30 +160,6 @@ service.OnMessageReceived += (topic, payload) =>
     });
 };
 ```
-
-## Field Deployment
-
-A system like this proves its worth only in the real world. Below is Klementynka equipped with the tracker module during an active field test, demonstrating the physical form factor and real world durability of the 3D printed enclosure.
-
-<!-- Field Usage Image: Klementynka wearing the tracker -->
-<p align="center">
-  <img src="docs/klementynka-field.jpg" alt="Klementynka wearing the tracker in the field" width="700" />
-  <br>
-  <em>Active field deployment.</em>
-</p>
-
-## Downloads & Releases
-
-While the source code is kept private to protect the underlying infrastructure and embedded secrets, the mobile client is fully built and ready for use. 
-
-Compiled application packages (iterated across multiple versions) are available for free download. You can find the latest Android (APK) and Windows builds in the **[Releases](../../releases)** section of this repository.
-
-## Design & Engineering Principles
-
-- **Quiet Complexity:** The UI hides the complexity of AT commands and MQTT handshakes behind a clean, interactive map.
-- **Platform Agnosticism:** Careful XAML architecting ensures the application renders pixel-perfectly on both Android native handlers and the notoriously strict Windows WinUI3 XAML parser.
-- **Graceful Uncertainty:** The system never lies. If a signal is lost, the UI explicitly transitions from a green `LIVE` pulse to a gray `LAST KNOWN` state with an elapsed time counter.
-- **Hardware-Software Synergy:** The software themes and 3D enclosure variants are designed as a unified product family.
 
 <div align="center">
   <br>
