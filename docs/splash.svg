@@ -16,8 +16,6 @@
       <stop offset="100%" stop-color="#075985" stop-opacity="0"/>
     </radialGradient>
   </defs>
-  <!-- Pozadí Splash Screenu -->
-  <rect width="1000" height="1000" fill="#000000"/>
 
   <!-- Silueta kočky (dýchání + pravé ouško + ocas) -->
   <path d="M 174 319 C 195 331 219 343 243 355 C 272 343 307 343 336 355 C 358 341 382 329 406 319 C 406 358 406 400 406 441 C 625 280 895 450 908 674 C 680 674 390 674 125 674 C 106.8 674 92 659.2 92 641 C 92 622.8 106.8 608 125 608 C 375 608 520 608 633 608 C 643 608 643 593 633 593 L 260 593 C 178 585 142 505 174 429 C 174 392 174 355 174 319 Z" fill="#ffffff" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
