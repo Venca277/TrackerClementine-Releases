@@ -5,7 +5,7 @@
 -->
 
 <div align="center">
-  <img src="docs/splash.svg" alt="Clementine Logo" width="200" />
+  <img src="docs/splash2.svg" alt="Clementine Logo" width="200" />
   <h1>Clementine</h1>
   <p><strong>An end-to-end, private cellular tracking ecosystem built for absolute location awareness.</strong></p>
   <p>
