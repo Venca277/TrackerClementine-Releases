@@ -19,7 +19,7 @@
   </p>
 
   <details>
-    <summary><sub>☕ <strong>Support the project</strong> — Clementine is built and maintained independently</sub></summary>
+    <summary><sub><strong>Support the project</strong> — Clementine is built and maintained independently</sub></summary>
     <br>
     <img src="docs/support-qr.png" alt="Bank transfer QR code" width="180" />
     <br>
