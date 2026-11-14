@@ -7,6 +7,7 @@
 <div align="center">
   <img src="docs/logo3.png" alt="Clementine Logo" width="200" />
   <h1>Clementine</h1>
+  <img src="docs/splash.svg" alt="Clementine" width="200" />
   <p><strong>An end-to-end, private cellular tracking ecosystem built for absolute location awareness.</strong></p>
   <p>
     <img src="https://img.shields.io/badge/Release-Available-F59E0B?style=flat-square&logo=github" alt="Releases" />
