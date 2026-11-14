@@ -1,5 +1,6 @@
 {
-  "Version": "1.6",
-  "AndroidUrl": "https://github.com/Venca277/TrackerClementine-Releases/releases/download/v1.6/com.companyname.Clementine-Signed.apk",
-  "WindowsUrl": "https://github.com/Venca277/TrackerClementine-Releases/releases/download/v1.6/Clementine-Setup.exe"
+  "Version": "1.6.2",
+  "AndroidUrl": "https://github.com/Venca277/TrackerClementine-Releases/releases/download/v1.6.2/com.companyname.Clementine-Signed.apk",
+  "WindowsUrl": "https://github.com/Venca277/TrackerClementine-Releases/releases/download/v1.6.2/Clementine-Setup.exe",
+  "iOSUrl": "https://github.com/Venca277/TrackerClementine-Releases/releases/download/v1.6.2/Clementine.ipa"
 }
